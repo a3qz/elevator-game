@@ -61,7 +61,7 @@ export class GameScene extends Phaser.Scene {
 
     this.timer = this.time.addEvent({delay:10000});
     // debugtext
-    this.debugText = this.add.text(getGameWidth(this) / 2, 5, '').setDepth(1000);
+    this.debugText = this.add.text(getGameWidth(this) / 2 -25 , 5, '').setDepth(1000).setColor("0x000000");
   }
 
   public update(): void {
@@ -92,7 +92,7 @@ export class GameScene extends Phaser.Scene {
 
     switch(this.doorDirection){
       case 0: // doors closed
-        if(this.ticker >= this.nextOpening || this.cursorKeys.space.isDown){
+        if(this.ticker >= this.nextOpening ){
           this.dingSound.play();
           this.openSound.play();
           this.transitionDoors();
@@ -136,6 +136,11 @@ export class GameScene extends Phaser.Scene {
               console.log("you fell");
               GameScene.floorNumber = 0;
             }
+          }
+
+          if(GameScene.floorNumber == 11){
+            this.scene.start("victory");
+            this.backgroundMusic.pause();
           }
         }
         break;
