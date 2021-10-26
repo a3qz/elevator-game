@@ -6,6 +6,7 @@
   "author": "Joe Bustamante",
   "license": "MIT",
   "private": false,
+  "homepage": "/elevator/",
   "scripts": {
     "build": "yarn build:dev",
     "build:dev": "NODE_ENV=development webpack",
