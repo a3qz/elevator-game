@@ -1,3 +1,14 @@
+# Elevator game
+
+attribution:
+Local Forecast – Elevator by Kevin MacLeod | https://incompetech.com/
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+
+
+
+Project based off of: 
 # Phaser 3 + TypeScript Starter Kit
 
 This repository contains all the code necessary to start making a game in Phaser 3 using TypeScript.
@@ -49,3 +60,6 @@ The [official Phaser documentation](https://phaser.io/learn) has lots of great t
 
 I've written a few small games in Phaser. One was a game I created with a team of people for [Ludum Dare 44 called Root Maker](https://ldjam.com/events/ludum-dare/44/root-maker). You can find a great [post-mortem of that game here](https://spin.atomicobject.com/2019/05/11/ludum-dare-44/).
 Additionally, Root Maker is open source. To see what a larger project might look like in Phaser (albeit one that doesn't use the physics system or much in the way of graphics), [you can find the source code here.](https://github.com/josephmbustamante/Root-Maker)
+
+
+
